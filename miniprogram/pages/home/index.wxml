@@ -1,0 +1,17 @@
+<!--miniprogram/pages/home/index.wxml-->
+<view class="task-page" >
+    <van-button type="primary">ADD TASK</van-button>
+    <view class="task-content">
+    <text >当前任务</text>
+    <view class="task-list">
+        <view class="task-item" wx:for="{{list}}">
+        <view class="task-progress">
+        </view>
+        <text class="task-title">
+        </text>
+        <text class="spend-time"></text>
+        <text class="start-time"></text>
+        </view>
+    </view>
+    </view>
+</view>

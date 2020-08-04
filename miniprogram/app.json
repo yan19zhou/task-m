@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/add/index",
+    "pages/detail/index",
+    "pages/today/index"
+  ],
+  "tabBar": {
+    "list": [{
+        "pagePath": "pages/home/index",
+        "text": "总览"
+      },
+      {
+        "pagePath": "pages/today/index",
+        "text": "今天"
+      }
+    ]
+  },
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "TASK_M",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
