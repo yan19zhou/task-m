@@ -1,17 +1,21 @@
-<!--miniprogram/pages/home/index.wxml-->
-<view class="task-page" >
-    <van-button type="primary">ADD TASK</van-button>
+<!-- miniprogram/pages/home/index.wxml -->
+<view class="task-page w90">
+    <van-button type="primary" class="add" bind:click="toAddPage">ADD TASK</van-button>
     <view class="task-content">
-    <text >当前任务</text>
-    <view class="task-list">
-        <view class="task-item" wx:for="{{list}}">
-        <view class="task-progress">
+        <text>当前任务</text>
+        <view class="task-list">
+            <scroll-view class="" scroll-x="false" scroll-y="true" bindscrolltolower="loadList" bindrefresherrefresh="refreshData">
+                <view class="task-item" wx:for="{{list}}" wx:key="index">
+                    <view class="task-progress" style="width:{{item.progress*100}}%"></view>
+                    <view class="task-text">
+                        <text class="task-title">{{item.name}}</text>
+                        <view class="task-time">
+                            <text class="spend-time">累计时间:{{item.spendtime}}小时</text>
+                            <text class="start-time">开始时间:{{item.starttime}}</text>
+                        </view>
+                    </view>
+                </view>
+            </scroll-view>
         </view>
-        <text class="task-title">
-        </text>
-        <text class="spend-time"></text>
-        <text class="start-time"></text>
-        </view>
-    </view>
     </view>
 </view>

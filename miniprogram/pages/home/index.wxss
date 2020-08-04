@@ -1,1 +1,58 @@
 /* miniprogram/pages/home/index.wxss */
+
+.add button {
+    width: 100%;
+}
+
+.w90 {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.task-content {
+    padding-top: 30rpx;
+    box-sizing: border-box;
+    color: #111613;
+}
+
+.task-item {
+    height: 120rpx;
+    background-color: #ccc;
+    color: #ffffff;
+    margin: 18rpx 0;
+    box-shadow: 1rpx 2rpx 6rpx #ddd;
+    position: relative;
+}
+
+.task-item,
+.task-progress {
+    border-radius: 8rpx;
+}
+
+.task-progress,
+.task-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.task-progress {
+    background-color: #108046;
+    height: 100%;
+}
+
+.task-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    box-sizing: border-box
+}
+
+.task-time {
+    display: flex;
+    justify-content: space-between;
+}
